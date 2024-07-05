@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.12em;
+}
+
+.container {
+  background-color: #F7F7F7;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0%, rgba(1, 1, 1, 0.7) 100%), url(../img/header-background.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+}
+.header__logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 53px;
+  width: 56px;
+}
+.header__box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.title-frist {
+  color: #fff;
+}
+.title-frist__main {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  animation-name: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 2s;
+  animation-timing-function: easy;
+  backface-visibility: hidden;
+}
+.title-frist__secondary {
+  display: block;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 48px;
+  animation-name: rightToLeft;
+  animation-duration: 1.7s;
+  animation-delay: 2s;
+  animation-timing-function: easy;
+  backface-visibility: hidden;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 40px;
+  color: #777777;
+  background-color: #fff;
+  border-raduis: 50px;
+  backface-visibility: hidden;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=style.css.map */
